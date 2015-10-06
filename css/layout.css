@@ -4,7 +4,20 @@
 	box-sizing: border-box;
 }
 
-.ds-container-center,
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+.cf {
+    *zoom: 1;
+}
+
+.ba-container-center,
 [class*='_centered'] {
 	margin-left: auto;
 	margin-right: auto;
@@ -17,41 +30,41 @@ img{
 
 /* Text align */
 
-.ds-text-left,
+.ba-text-left,
 [class*='_text_left'] {
 	text-align: left;
 }
 
-.ds-text-right,
+.ba-text-right,
 [class*='_text_right'] {
 	text-align: right;
 }
 
-.ds-text-center,
+.ba-text-center,
 [class*='_text_center'] {
 	text-align: center;
 }
 
 /* Floats */
 
-.ds-float-left,
+.ba-float-left,
 [class*='_float_left'] {
 	float: left;
 }
 
-.ds-float-right,
+.ba-float-right,
 [class*='_float_right'] {
 	float: right;
 }
 
-.ds-float-none,
+.ba-float-none,
 [class*='_float_none'] {
 	float: none;
 }
 
 /* Vertical align */
 
-.ds-vertical-align:before,
+.ba-vertical-align:before,
 [class*='_valign_']:before {
 	content: '';
 	display: inline-block;
@@ -63,28 +76,28 @@ img{
 	display: inline-block;
 }
 
-.ds-vertical-align-top,
+.ba-vertical-align-top,
 [class*='_valign_top'] {
 	vertical-align: top;
 }
 
-.ds-vertical-align-middle,
+.ba-vertical-align-middle,
 [class*='_valign_middle'] {
 	vertical-align: middle;
 }
 
-.ds-vertical-align-bottom,
+.ba-vertical-align-bottom,
 [class*='_valign_bottom'] {
 	vertical-align: bottom;
 }
 
 /* Absolute centering */
-.ds-relative,
+.ba-relative,
 [class*='_relative'] {
 	position: relative;
 }
 
-.ds-absolute-center,
+.ba-absolute-center,
 [class*='_absolute-centered'] {
 	display: block;
 	position: absolute;
@@ -96,7 +109,7 @@ img{
 }
 
 /* Circle element */
-.ds-circle,
+.ba-circle,
 [class*='_circle'] {
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
@@ -106,135 +119,135 @@ img{
 /*== Grid ==*/
 /* Grid clearfix */
 
-.ds-grid:before,
-.ds-grid:after,
+.ba-grid:before,
+.ba-grid:after,
 [class*='_grid']:before,
 [class*='_grid']:after {
 	content: " ";
 	display: table;
 }
 
-.ds-grid:after,
+.ba-grid:after,
 [class*='_grid']:after {
 	clear: both;
 }
 
-.ds-grid,
+.ba-grid,
 [class*='_grid'] {
 	*zoom: 1;
 }
 
-.ds-grid + .ds-grid,
+.ba-grid + .ba-grid,
 [class*='_grid'] + [class*='_grid'] {
 	margin-top: 20px;
 }
 
-[class*="ds-width-"],
+[class*='ba-width-'],
 [class*='_width_'] {
 	width: 100%;
 }
 
-.ds-grid > [class*="ds-width-"],
-.ds-grid > [class*='_width_'] {
+.ba-grid > [class*='ba-width-'],
+.ba-grid > [class*='_width_'] {
 	float: left;
 	padding-left: 20px;
 }
 
-.ds-grid,
+.ba-grid,
 [class*='_grid'] {
 	margin-left: -20px;
 }
 
 /* No Padding Grid */
-.ds-grid-nopad,
+.ba-grid-nopad,
 [class*='_grid-nopad'] {
 	margin-left: 0;
 }
 
-.ds-grid-nopad > [class*="ds-width-"],
-.ds-grid-nopad > [class*='_width_'] {
+.ba-grid-nopad > [class*='ba-width-'],
+.ba-grid-nopad > [class*='_width_'] {
 	padding-left: 0;
 }
 
-.ds-width-1-2,
-.ds-width-2-4,
-.ds-width-3-6,
+.ba-width-1-2,
+.ba-width-2-4,
+.ba-width-3-6,
 [class*='_width_1-2'],
 [class*='_width_2-4'],
 [class*='_width_3-6'] {
 	width: 50%;
 }
 
-.ds-width-1-3,
-.ds-width-2-6,
+.ba-width-1-3,
+.ba-width-2-6,
 [class*='_width_1-3'],
 [class*='_width_2-6'] {
 	width: 33.333%;
 }
 
-.ds-width-2-3,
-.ds-width-4-6,
+.ba-width-2-3,
+.ba-width-4-6,
 [class*='_width_2-3'],
 [class*='_width_4-6'] {
 	width: 66.667%;
 }
 
-.ds-width-1-4,
+.ba-width-1-4,
 [class*='_width_1-4'] {
 	width: 25%;
 }
 
-.ds-width-3-4,
+.ba-width-3-4,
 [class*='_width_3-4'] {
 	width: 75%;
 }
 
-.ds-width-1-5,
+.ba-width-1-5,
 [class*='_width_1-5'] {
 	width: 20%;
 }
 
-.ds-width-2-5,
+.ba-width-2-5,
 [class*='_width_2-5'] {
 	width: 40%;
 }
 
-.ds-width-3-5,
+.ba-width-3-5,
 [class*='_width_3-5'] {
 	width: 60%;
 }
 
-.ds-width-4-5,
+.ba-width-4-5,
 [class*='_width_4-5'] {
 	width: 80%;
 }
 
-.ds-width-1-6,
+.ba-width-1-6,
 [class*='_width_1-6'] {
 	width: 16.667%;
 }
 
-.ds-width-5-6,
+.ba-width-5-6,
 [class*='_width_5-6'] {
 	width: 83.333%;
 }
 
-.ds-width-1-7,
+.ba-width-1-7,
 [class*='_width_1-7'] {
 	width: 14.2857%;
 }
 
-.ds-width-1-8,
+.ba-width-1-8,
 [class*='_width_1-8'] {
 	width: 12.5%;
 }
 
-.ds-width-1-9,
+.ba-width-1-9,
 [class*='_width_1-9'] {
 	width: 11.1111%;
 }
 
-.ds-width-1-10,
+.ba-width-1-10,
 [class*='_width_1-10'] {
 	width: 10%;
 }
