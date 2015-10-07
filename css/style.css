@@ -52,6 +52,10 @@ h3 {
 	font-size: 20px;
 }
 
+h4 {
+	font-size: 18px;
+}
+
 p {
 	color: #5E5E5E;
 }
@@ -617,4 +621,65 @@ a {
 .ba-contact__map {
 	height: 409px;
 	margin-top: 80px;
+}
+
+/* Footer */
+
+.ba-footer {
+	background: #000 url(../img/footer-bg.png) no-repeat 50% 100%;
+	padding: 80px;
+}
+
+.ba-footer__slogan {
+	color: #ECB944;
+}
+
+.ba-footer__social-wrapper {
+	font-size: 0;
+}
+
+.ba-footer__social {
+	display: inline-block;
+	width: 48px;
+	height: 48px;
+	background: url(../img/icon/social.png) no-repeat;
+	margin-left: 10px;
+}
+
+.ba-footer__social:first-child {
+	margin-left: 0;
+}
+
+.ba-footer__social_fb {
+	background-position: -48px 0;
+}
+
+.ba-footer__social_ok {
+	background-position: -96px 0;
+}
+
+.ba-footer__social_tw {
+	background-position: -144px 0;
+}
+
+.ba-footer__social_vk:hover {
+	background-position: 0 -48px;
+}
+
+.ba-footer__social_fb:hover {
+	background-position: -48px -48px;
+}
+
+.ba-footer__social_ok:hover {
+	background-position: -96px -48px;
+}
+
+.ba-footer__social_tw:hover {
+	background-position: -144px -48px;
+}
+
+.ba-footer__copyright {
+	color: #606060;
+	font-size: 16px;
+	letter-spacing: .1em;
 }
