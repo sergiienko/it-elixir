@@ -1,38 +1,7 @@
-@font-face {
-    font-family: 'roboto';
-    src: url(../font/roboto-light/roboto-light.eot);
-    src: url(../font/roboto-light/roboto-light.eot?#iefix) format('embedded-opentype'),
-         url(../font/roboto-light/roboto-light.woff) format('woff'),
-         url(../font/roboto-light/roboto-light.ttf) format('truetype'),
-         url(../font/roboto-light/roboto-light.svg#robotolight) format('svg');
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'roboto';
-    src: url(../font/roboto-thin/roboto-thin.eot);
-    src: url(../font/roboto-thin/roboto-thin.eot?#iefix) format('embedded-opentype'),
-         url(../font/roboto-thin/roboto-thin.woff) format('woff'),
-         url(../font/roboto-thin/roboto-thin.ttf) format('truetype'),
-         url(../font/roboto-thin/roboto-thin.svg#robotolight) format('svg');
-    font-weight: 100;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'roboto';
-    src: url(../font/roboto-bold/roboto-bold.eot);
-    src: url(../font/roboto-bold/roboto-bold.eot?#iefix) format('embedded-opentype'),
-         url(../font/roboto-bold/roboto-bold.woff) format('woff'),
-         url(../font/roboto-bold/roboto-bold.ttf) format('truetype'),
-         url(../font/roboto-bold/roboto-bold.svg#robotolight) format('svg');
-    font-weight: 700;
-    font-style: normal;
-}
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,100,700);
 
 body {
-	font: 400 16px/1.5 'roboto', Arial, sans-serif;
+	font: 300 16px/1.5 'Roboto', Arial, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -275,7 +244,7 @@ a {
 .ba-banner__title {
 	color: #FFF;
 	text-transform: uppercase;
-	font-weight: 400;
+	font-weight: 300;
 	/*letter-spacing: 8.4px;*/
 	letter-spacing: 0.2em;
 }
@@ -283,7 +252,7 @@ a {
 .ba-banner__subtitle {
 	color: #ECB944;
 	text-transform: lowercase;
-	font-weight: normal;
+	font-weight: 300;
 }
 
 .ba-banner-footer {
@@ -495,7 +464,7 @@ a {
 /* Help */
 
 .ba-help {
-	padding: 60px 0 55px;
+	padding: 100px 0;
 	background: url(../img/bg-stars.jpg) no-repeat 50% 0;
     -webkit-background-size: cover;
     -o-background-size: cover;
@@ -565,7 +534,7 @@ a {
 
 .ba-team__member-name,
 .ba-team__member-position {
-	font-weight: 400;
+	font-weight: 300;
 	line-height: 48px;
 	margin: 0;
 }
