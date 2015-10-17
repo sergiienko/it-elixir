@@ -10,7 +10,7 @@ function initialize() {
 	var map=new google.maps.Map(document.getElementById("map"), mapProp);
 	var marker=new google.maps.Marker({
 		  position: display,
-		  icon: 'img/icon/address.png'
+		  icon: 'img/icon/address.svg'
 	});
 
 	marker.setMap(map);
