@@ -15,6 +15,12 @@ h1 {
 	font-size: 42px;
 }
 
+@media (max-width: 479px) {
+	h1 {
+		font-size: 38px;
+	}
+}
+
 h2 {
 	font-size: 36px;
 }
@@ -136,6 +142,7 @@ a {
 	margin-right: auto;
 	padding: 0 28px;
 	text-align: center;
+	overflow: hidden;
 }
 
 .ba-overlay {
@@ -214,6 +221,134 @@ a {
 .ba-menu a:hover {
 	padding-bottom: 10px;
 	border-bottom: 1px solid #FFF;
+}
+
+.ba-menu-toggle {
+	float: right;
+	display: inline-block;
+	width: 30px;
+	border: solid #C5C5C5;
+	border-width: 5px 0;
+	margin: 40px 30px 0 0;
+	padding: 6px 0;
+	display: none;
+	cursor: pointer;
+	-webkit-border-radius: 2px;
+	        border-radius: 2px;
+
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.ba-menu-toggle:before {
+	content: "";
+	background: #C5C5C5;
+	height: 5px;
+	display: block;
+}
+
+.ba-menu-toggle:hover {
+	border-color: #ECB944;
+}
+
+.ba-menu-toggle:hover:before {
+	background-color: #ECB944;
+}
+
+.ba-menu-overlay {
+	display: none;
+	position: absolute;
+	top: 0; bottom: 0; left: 0; right: 0;
+	z-index: 997;
+}
+
+@media (max-width: 959px) {
+
+	body {
+		position: relative;
+		left: 0;
+		-webkit-transition: left .3s ease-in;
+		   -moz-transition: left .3s ease-in;
+		        transition: left .3s ease-in;
+	}
+
+
+	.ba-menu-open {
+		left: -200px;
+	}
+
+	.ba-menu-open .ba-menu-overlay {
+		display: block;
+	}
+
+	.ba-menu-bg {
+		position: absolute;
+		top: 0; bottom: 0; right: -200px;
+		width: 200px;
+		background-color: #000;
+		z-index: 998;
+	}
+
+	.ba-menu-open .ba-nav {
+		right: 0;
+	}
+
+	.ba-menu-toggle {
+		display: inline-block;
+		position: relative;
+		z-index: 998;
+
+		-webkit-transition: margin .3s ease-in;
+		   -moz-transition: margin .3s ease-in;
+		        transition: margin .3s ease-in;
+	}
+
+	.ba-header_secondary .ba-menu-toggle {
+		margin-top: 17px;
+	}
+
+	.ba-menu-open .ba-header_secondary .ba-menu-toggle {
+		margin-right: 230px;
+	}
+
+	.ba-nav {
+		/*display: none;*/
+		position: fixed;
+		line-height: 24px;
+		margin: 0;
+		padding: 20px;
+		background: #000;
+		top: 0; right: -200px; bottom: 0;
+		width: 200px;
+		z-index: 999;
+
+		-webkit-transition: right .3s ease-in;
+		   -moz-transition: right .3s ease-in;
+		        transition: right .3s ease-in;
+	}
+
+	.ba-lang,
+	.ba-menu {
+		float: none;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.ba-lang {
+		display: inline-block;
+		margin-bottom: 20px;
+	}
+
+	.ba-menu li {
+		display: block;
+		margin: 0;
+		padding: 10px 0;
+	}
+
 }
 
 /* Banner */
@@ -306,6 +441,7 @@ a {
 	height: 59px;
 	line-height: 59px;
 	padding: 0;
+	border: none;
 
 	-webkit-transition: transform .3s ease-in;
 	   -moz-transition: transform .3s ease-in;
@@ -508,7 +644,7 @@ a {
 /* Help */
 
 .ba-help {
-	padding: 38px 0 82px;
+	padding: 38px 0 62px;
 	background: url(../img/bg-stars.jpg) no-repeat 50% 0;
     -webkit-background-size: cover;
     -o-background-size: cover;
@@ -517,7 +653,7 @@ a {
 
 .ba-help_without-bg {
 	background: none;
-	padding: 7px 0 98px;
+	padding: 7px 0 78px;
 }
 
 .ba-help_without-bg .ba-help__title {
@@ -536,13 +672,15 @@ a {
 
 .ba-help__form input,
 .ba-help__form button {
-	width: 304px;
+	min-width: 235px;
+	max-width: 304px;
+	width: 100%;
 	font-size: 18px;
 	color: #7F7F7F;
 }
 
 .ba-help__form input {
-	margin-right: 28px;
+	margin-bottom: 20px;
 }
 
 .ba-help__button {
@@ -570,7 +708,7 @@ a {
 /* Team */
 
 .ba-team {
-	padding: 10px 0 95px;
+	padding: 10px 0 65px;
 	border-bottom: 1px solid #DCDCDC;
 }
 
@@ -579,6 +717,7 @@ a {
 }
 
 .ba-team__photo-wrapper {
+	display: inline-block;
 	overflow: hidden;
 	width: 221px;
 	height: 295px;
@@ -606,16 +745,23 @@ a {
 	text-transform: uppercase;
 	margin: 0;
 	line-height: 22px;
+	margin-bottom: 40px;
 }
 
 /* Contact */
 
 .ba-contact {
-	padding: 58px 0 50px;
+	padding: 58px 0 30px;
 }
 
 .ba-contact__title {
 	margin-bottom: 55px;
+}
+
+.ba-contact__item {
+	display: inline-block;
+	max-width: 205px;
+	margin-bottom: 20px;
 }
 
 .ba-contact__icon {
@@ -711,4 +857,18 @@ a {
 	font-size: 16px;
 	letter-spacing: .1em;
 	margin-top: 95px;
+}
+
+@media (min-width: 768px) and (max-width: 959px) {
+	.ba-team .ba-width-large-1-4 {
+		width: 50%;
+	}
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+	.ba-advantages .ba-width-medium-1-3,
+	.ba-services .ba-width-medium-1-3,
+	.ba-team .ba-width-large-1-4 {
+		width: 50%;
+	}
 }

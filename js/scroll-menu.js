@@ -3,12 +3,15 @@
 	var $header = $("#header"),
 		hClass = "ba-header_secondary",
 		pos = parseFloat( $(".ba-banner").css("height") ) - 1;
+
 	$(document).scroll(function() {
 		if($(this).scrollTop() > pos) {
 			if (!$header.hasClass(hClass)) {
 				$header
 					.addClass("ba-header_secondary")
-					.addClass("ba-header_shown")
+					.addClass("ba-header_shown");
+
+				$(document.body).removeClass("ba-menu-open");
 			}
 		} else {
 			if ($header.hasClass(hClass)) {

@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head lang="en">
+	<meta charset="UTF-8">
+
 	<title>IT Elixir - Solutions & Development</title>
+
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<meta charset="UTF-8">
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
+
 	<link rel="icon" href="favicon.png"/>
 	<link rel="stylesheet" href="css/normalize.css" />
 	<link rel="stylesheet" href="css/layout.css" />
 	<link rel="stylesheet" href="css/style.css" />
 	<link rel="stylesheet" href="css/it-elixir-social.css" />
-
-	<!--[if lt IE 9]>
-		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	<![endif]-->
 
 </head>
 <body>
@@ -27,20 +25,18 @@
 			<a href="#" class="ba-logo ba-float-left">
 				<img class="ba-logo__img" src="img/logo.svg" alt="Logo">
 			</a>
-
 			<!-- /.ba-logo -->
 
 			<nav class="ba-nav ba-float-right" role="navigation">
 
-				<ul class="ba-lang ba-float-left">
+				<ul class="ba-lang ba-float-left cf">
 					<li class="ba_is-current">
 						EN |
-					</li>
-					<li>
+					</li><!--
+					--><li>
 						<a href="#">RU</a>
 					</li>
 				</ul>
-
 				<!-- /.ba-lang -->
 
 				<ul class="ba-menu ba-menu_float_right">
@@ -60,11 +56,12 @@
 						<a href="#">Contacts</a>
 					</li>
 				</ul>
-
 				<!-- /.ba-menu -->
 
 			</nav>
 			<!-- /.ba-nav -->
+
+			<span class="ba-menu-toggle"></span>
 
 		</div>
 	</header>
@@ -92,37 +89,37 @@
 			<div class="ba-container ba-container_centered ba-container_text_center">
 				<h2 class="ba-advantages__title">Why choose us?</h2>
 				<div class="ba-grid">
-					<div class="ba-width-1-3">
+					<div class="ba-width-medium-1-3">
 						<div class="ba-advantages__item">
 							<img src="img/icon/light-bulb.svg" alt="The best specialists">
 							<p>The team of the best specialists</p>
 						</div>
 					</div>
-					<div class="ba-width-1-3">
+					<div class="ba-width-medium-1-3">
 						<div class="ba-advantages__item">
 							<img src="img/icon/target.svg" alt="The successful experience">
 							<p>The successful experience of major large projects</p>
 						</div>
 					</div>
-					<div class="ba-width-1-3">
+					<div class="ba-width-medium-1-3">
 						<div class="ba-advantages__item">
 							<img src="img/icon/clock.svg" alt="The shortest time">
 							<p>The shortest time performing complex tasks</p>
 						</div>
 					</div>
-					<div class="ba-width-1-3">
+					<div class="ba-width-medium-1-3">
 						<div class="ba-advantages__item">
 							<img src="img/icon/pie-chart.svg" alt="Flexible payment">
 							<p>Flexible payment</p>
 						</div>
 					</div>
-					<div class="ba-width-1-3">
+					<div class="ba-width-medium-1-3">
 						<div class="ba-advantages__item">
 							<img src="img/icon/man.svg" alt="Individual approach">
 							<p>Individual approach</p>
 						</div>
 					</div>
-					<div class="ba-width-1-3">
+					<div class="ba-width-medium-1-3">
 						<div class="ba-advantages__item">
 							<img src="img/icon/lock.svg" alt="Confidentiality">
 							<p>Confidentiality</p>
@@ -149,37 +146,37 @@
 				<p class="ba-services__text_secondary">Cooperation with the company allows you to take advantage of advanced information technologies necessary for the development of every modern enterprise.</p>
 
 				<div class="ba-grid">
-					<div class="ba-width-1-3">
+					<div class="ba-width-medium-1-3">
 						<div class="ba-services__item">
 							<img src="img/icon/server.svg" alt="Maintenance of server">
 							<p>Maintenance and virtualization of server</p>
 						</div>
 					</div>
-					<div class="ba-width-1-3">
+					<div class="ba-width-medium-1-3">
 						<div class="ba-services__item">
 							<img src="img/icon/cloud.svg" alt="Cloud technologies">
 							<p>Cloud technologies</p>
 						</div>
 					</div>
-					<div class="ba-width-1-3">
+					<div class="ba-width-medium-1-3">
 						<div class="ba-services__item">
 							<img src="img/icon/cog.svg" alt="Network administration">
 							<p>Network administration</p>
 						</div>
 					</div>
-					<div class="ba-width-1-3">
+					<div class="ba-width-medium-1-3">
 						<div class="ba-services__item">
 							<img src="img/icon/desktop.svg" alt="Computer services">
 							<p>Computer services</p>
 						</div>
 					</div>
-					<div class="ba-width-1-3">
+					<div class="ba-width-medium-1-3">
 						<div class="ba-services__item">
 							<img src="img/icon/headphones.svg" alt="IP Telephony">
 							<p>IP Telephony: installation, configuration and maintenance</p>
 						</div>
 					</div>
-					<div class="ba-width-1-3">
+					<div class="ba-width-medium-1-3">
 						<div class="ba-services__item">
 							<img src="img/icon/brush.svg" alt="Web Design">
 							<p>Web Design and Web Development</p>
@@ -297,10 +294,19 @@
 		<section class="ba-help">
 			<div class="ba-container ba-container_centered ba-container_text_center">
 				<h2 class="ba-help__title">Have any questions? Get free consultation from our experts</h2>
+
 				<form class="ba-help__form" action="#" method="post">
-					<input type="text" name="name" placeholder="Your name" required>
-					<input type="tel" name="phone" placeholder="Phone number" required>
-					<button type="submit" class="ba-help__button">Get free consultation!</button>
+					<div class="ba-grid">
+						<div class="ba-width-medium-1-3">
+							<input type="text" name="name" placeholder="Your name" required>
+						</div>
+						<div class="ba-width-medium-1-3">
+							<input type="tel" name="phone" placeholder="Phone number" required>
+						</div>
+						<div class="ba-width-medium-1-3">
+							<button type="submit" class="ba-help__button">Get free consultation!</button>
+						</div>
+					</div>
 				</form>
 			</div>
 		</section>
@@ -309,8 +315,8 @@
 			<div class="ba-container ba-container_centered ba-container_text_center">
 				<h2 class="ba-about__title">About Us</h2>
 				<div class="ba-grid">
-					<p class="ba-width-1-2 ba-text-left">We are a progressive IT-company with ambitious plans and innovative start-up projects. IT Elixir boasts about generating its own ideas, which turn into the best services for customers in a particular niche.</p>
-					<p class="ba-width-1-2 ba-text-left">
+					<p class="ba-width-medium-1-2 ba-text-left">We are a progressive IT-company with ambitious plans and innovative start-up projects. IT Elixir boasts about generating its own ideas, which turn into the best services for customers in a particular niche.</p>
+					<p class="ba-width-medium-1-2 ba-text-left">
 						The main goal of our company is to create not just a user-friendly product, but also make the Internet and entire world a healthier, cleaner and more professional place.
 						<a href="#" class="ba-button ba-button_plain">Learn more about us ></a>
 					</p>
@@ -322,28 +328,28 @@
 			<div class="ba-container">
 				<h2 class="ba-team__title">Meet Our Team</h2>
 				<div class="ba-grid">
-					<div class="ba-width-1-4">
+					<div class="ba-width-large-1-4">
 						<div class="ba-team__photo-wrapper">
 							<img src="img/team/1.jpg" alt="Alex Morgan">
 						</div>
 						<h3 class="ba-team__member-name">Alex Morgan</h3>
 						<h4 class="ba-team__member-position">Programmer</h4>
 					</div>
-					<div class="ba-width-1-4">
+					<div class="ba-width-large-1-4">
 						<div class="ba-team__photo-wrapper">
 							<img src="img/team/2.jpg" alt="Darja King">
 						</div>
 						<h3 class="ba-team__member-name">Darja King</h3>
 						<h4 class="ba-team__member-position">Designer</h4>
 					</div>
-					<div class="ba-width-1-4">
+					<div class="ba-width-large-1-4">
 						<div class="ba-team__photo-wrapper">
 							<img src="img/team/3.jpg" alt="Nik Brumer">
 						</div>
 						<h3 class="ba-team__member-name">Nik Brumer</h3>
 						<h4 class="ba-team__member-position">Developer</h4>
 					</div>
-					<div class="ba-width-1-4">
+					<div class="ba-width-large-1-4">
 						<div class="ba-team__photo-wrapper">
 							<img src="img/team/4.jpg" alt="Mike Smith">
 						</div>
@@ -358,25 +364,31 @@
 			<div class="ba-container">
 				<h2 class="ba-contact__title">Contacts</h2>
 				<div class="ba-grid">
-					<div class="ba-width-1-3">
-						<img src="img/icon/phone.svg" alt="Phone icon" class="ba-contact__icon">
-						<div class="ba-contact__text">
-							<p>Call us</p>
-							<a href="callto:380632788524">+38 063 278 85 24</a>
+					<div class="ba-width-medium-1-3">
+						<div class="ba-contact__item">
+							<img src="img/icon/phone.svg" alt="Phone icon" class="ba-contact__icon">
+							<div class="ba-contact__text">
+								<p>Call us</p>
+								<a href="callto:380632788524">+38 063 278 85 24</a>
+							</div>
 						</div>
 					</div>
-					<div class="ba-width-1-3">
-						<img src="img/icon/email.svg" alt="Email icon" class="ba-contact__icon">
-						<div class="ba-contact__text">
-							<p>Email</p>
-							<a href="mailto:itelixir.info@gmail.com">itelixir.info@gmail.com</a>
+					<div class="ba-width-medium-1-3">
+						<div class="ba-contact__item">
+							<img src="img/icon/email.svg" alt="Email icon" class="ba-contact__icon">
+							<div class="ba-contact__text">
+								<p>Email</p>
+								<a href="mailto:itelixir.info@gmail.com">itelixir.info@gmail.com</a>
+							</div>
 						</div>
 					</div>
-					<div class="ba-width-1-3">
-						<img src="img/icon/address.svg" alt="Address icon" class="ba-contact__icon">
-						<div class="ba-contact__text">
-							<p>Address</p>
-							<address>Ukraine, Kiev, street Thalmann, 5, office 99</address>
+					<div class="ba-width-medium-1-3">
+						<div class="ba-contact__item">
+							<img src="img/icon/address.svg" alt="Address icon" class="ba-contact__icon">
+							<div class="ba-contact__text">
+								<p>Address</p>
+								<address>Ukraine, Kiev, street Thalmann, 5, office 99</address>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -389,11 +401,21 @@
 
 		<section class="ba-help ba-help_without-bg">
 			<div class="ba-container ba-container_centered ba-container_text_center">
+
 				<h2 class="ba-help__title">Have any questions? Get free consultation from our experts</h2>
+
 				<form class="ba-help__form" action="#" method="post">
-					<input type="text" name="name" placeholder="Your name" required>
-					<input type="tel" name="phone" placeholder="Phone number" required>
-					<button type="submit" class="ba-help__button">Get free consultation!</button>
+					<div class="ba-grid">
+						<div class="ba-width-medium-1-3">
+							<input type="text" name="name" placeholder="Your name" required>
+						</div>
+						<div class="ba-width-medium-1-3">
+							<input type="tel" name="phone" placeholder="Phone number" required>
+						</div>
+						<div class="ba-width-medium-1-3">
+							<button type="submit" class="ba-help__button">Get free consultation!</button>
+						</div>
+					</div>
 				</form>
 			</div>
 		</section>
@@ -417,6 +439,10 @@
 
 	</footer>
 
+	<div class="ba-menu-overlay">
+		<div class="ba-menu-bg"></div>
+	</div>
+
 	<!-- JS -->
 
 	<!-- JQuery -->
@@ -424,6 +450,7 @@
 	<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
 	<!-- /JQuery -->
 
+	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/scroll-menu.js"></script>
 	<script type="text/javascript" src="js/smooth-scrolling.js"></script>
 	<script type="text/javascript" src="js/smooth-scrolling-anchor.js"></script>
