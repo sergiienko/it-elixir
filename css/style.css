@@ -46,12 +46,15 @@ button,
 .ba-button{
 	display: inline-block;
 	color: #A3A3A3;
+	line-height: 45px;
 	border: 1px solid #A3A3A3;
-	-webkit-border-radius: 25px;
-	        border-radius: 25px;
-	padding: 8px 35px;
+	-webkit-border-radius: 20px;
+	        border-radius: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
 	text-transform: uppercase;
 	outline: none;
+	letter-spacing: .075em;
 }
 
 input[type="submit"]:hover,
@@ -112,9 +115,9 @@ select:focus {
 	outline: none;
 }
 
-textarea {
-
-}
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus::-moz-placeholder { color:transparent; }
+input:focus:-ms-input-placeholder { color:transparent; }
 
 ul {
 	margin: 0;
@@ -222,16 +225,9 @@ a {
     -webkit-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    padding: 300px 0;
+    padding: 300px 0 0;
 }
-/*
-.ba-banner__overlay {
-	position: absolute;
-	top: 0; right: 0; bottom: 0; left: 0;
-	background: #000;
-	opacity: .57;
-}
-*/
+
 .ba-banner:before {
 	content: '';
 	position: absolute;
@@ -309,7 +305,6 @@ a {
 	background: #000;
 	height: 59px;
 	line-height: 59px;
-	border-bottom: 1px solid #C5C5C5;
 	padding: 0;
 
 	-webkit-transition: transform .3s ease-in;
@@ -348,15 +343,15 @@ a {
 
 .ba-advantages {
 	position: relative;
-	padding: 150px 0 100px;
+	padding: 150px 0 20px;
 }
 
 .ba-advantages__title {
-	margin-bottom: 50px;
+	margin-bottom: 70px;
 }
 
 .ba-advantages__item {
-	min-height: 150px;
+	min-height: 165px;
 }
 
 .ba-advantages__item > p {
@@ -366,7 +361,7 @@ a {
 /* Mission */
 
 .ba-mission {
-	padding: 80px 0 90px;
+	padding: 35px 0 90px;
 	background: url(../img/bg-stars.jpg) no-repeat 50% 0;
     -webkit-background-size: cover;
     -o-background-size: cover;
@@ -389,19 +384,23 @@ a {
 }
 
 .ba-button_learn-more {
-	margin-top: 40px;
+	margin-top: 55px;
 }
 
 /* Services */
 
 .ba-services {
-	padding: 100px 0 100px;
+	padding: 50px 0 80px;
 	border-bottom: 1px solid #DCDCDC;
 }
 
 .ba-services__text,
 .ba-services__text_secondary {
 	margin: 0;
+}
+
+.ba-services__text {
+	margin-top: 50px;
 }
 
 .ba-services__text_secondary {
@@ -411,7 +410,7 @@ a {
 }
 
 .ba-services__item {
-	min-height: 150px;
+	min-height: 180px;
 }
 
 .ba-services__item > p {
@@ -425,7 +424,7 @@ a {
 /* Projects */
 
 .ba-projects {
-	padding: 100px 0 200px;
+	padding: 55px 0 153px;
 }
 
 .ba-projects__slider {
@@ -509,7 +508,7 @@ a {
 /* Help */
 
 .ba-help {
-	padding: 100px 0;
+	padding: 38px 0 82px;
 	background: url(../img/bg-stars.jpg) no-repeat 50% 0;
     -webkit-background-size: cover;
     -o-background-size: cover;
@@ -518,6 +517,7 @@ a {
 
 .ba-help_without-bg {
 	background: none;
+	padding: 7px 0 98px;
 }
 
 .ba-help_without-bg .ba-help__title {
@@ -531,6 +531,7 @@ a {
 
 .ba-help__form {
 	font-size: 0;
+	padding-top: 5px;
 }
 
 .ba-help__form input,
@@ -544,28 +545,37 @@ a {
 	margin-right: 28px;
 }
 
-.ba-help__form button {
+.ba-help__button {
 	color: #434343;
 	background: #FFB200;
 	text-transform: none;
 	border: none;
-	padding-bottom: 9px;
+	letter-spacing: .01em;
 }
 
-.ba-help__form button:hover {
+.ba-help__button:hover {
 	background: #FFC236;
 }
 
 /* About */
 
 .ba-about {
-	padding: 60px 0 50px;
+	padding: 60px 0 20px;
+}
+
+.ba-about__title {
+	margin-bottom: 40px;
 }
 
 /* Team */
 
 .ba-team {
-	padding: 60px 0 50px;
+	padding: 10px 0 95px;
+	border-bottom: 1px solid #DCDCDC;
+}
+
+.ba-team__title {
+	margin-bottom: 55px;
 }
 
 .ba-team__photo-wrapper {
@@ -587,24 +597,36 @@ a {
 .ba-team__member-name {
 	color: #000;
 	font-size: 24px;
+	margin: 15px 0 0;
 }
 
 .ba-team__member-position {
 	font-size: 14px;
 	color: #5E5E5E;
 	text-transform: uppercase;
+	margin: 0;
+	line-height: 22px;
 }
 
 /* Contact */
 
+.ba-contact {
+	padding: 58px 0 50px;
+}
+
+.ba-contact__title {
+	margin-bottom: 55px;
+}
+
 .ba-contact__icon {
 	float: left;
+	margin-top: 5px;
 }
 
 
 .ba-contact__text {
 	text-align: left;
-	padding-left: 50px;
+	padding-left: 55px;
 }
 
 .ba-contact__text p,
@@ -621,7 +643,7 @@ a {
 
 .ba-contact__text a {
 	display: block;
-	line-height: 1.6;
+	line-height: 2.3;
 }
 
 .ba-contact__text a:hover {
@@ -630,11 +652,13 @@ a {
 
 .ba-contact__text address {
 	font-style: normal;
+	margin-top: 10px;
+	line-height: 1.3;
 }
 
 .ba-contact__map {
 	height: 409px;
-	margin-top: 80px;
+	margin-top: 95px;
 }
 
 /* Footer */
