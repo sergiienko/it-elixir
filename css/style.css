@@ -157,7 +157,7 @@ a {
 	top: 0; left: 0; right: 0;
 	padding: 20px 0 30px;
 	border-bottom: 1px solid rgba(255, 255, 255, .05);
-	z-index: 999;
+	z-index: 996;
 
 	-webkit-transition: height .2s ease-in;
 	   -moz-transition: height .2s ease-in;
@@ -263,6 +263,9 @@ a {
 	display: none;
 	position: absolute;
 	top: 0; bottom: 0; left: 0; right: 0;
+	background-color: #000;
+	opacity: .5;
+	cursor: pointer;
 	z-index: 997;
 }
 
@@ -285,14 +288,6 @@ a {
 		display: block;
 	}
 
-	.ba-menu-bg {
-		position: absolute;
-		top: 0; bottom: 0; right: -200px;
-		width: 200px;
-		background-color: #000;
-		z-index: 998;
-	}
-
 	.ba-menu-open .ba-nav {
 		right: 0;
 	}
@@ -300,15 +295,15 @@ a {
 	.ba-menu-toggle {
 		display: inline-block;
 		position: relative;
-		z-index: 998;
-
-		-webkit-transition: margin .3s ease-in;
-		   -moz-transition: margin .3s ease-in;
-		        transition: margin .3s ease-in;
+		z-index: 9999;
 	}
 
 	.ba-header_secondary .ba-menu-toggle {
 		margin-top: 17px;
+
+		-webkit-transition: margin .3s ease-in;
+		   -moz-transition: margin .3s ease-in;
+		        transition: margin .3s ease-in;
 	}
 
 	.ba-menu-open .ba-header_secondary .ba-menu-toggle {
@@ -316,7 +311,6 @@ a {
 	}
 
 	.ba-nav {
-		/*display: none;*/
 		position: fixed;
 		line-height: 24px;
 		margin: 0;
@@ -325,6 +319,7 @@ a {
 		top: 0; right: -200px; bottom: 0;
 		width: 200px;
 		z-index: 999;
+		text-align: center;
 
 		-webkit-transition: right .3s ease-in;
 		   -moz-transition: right .3s ease-in;

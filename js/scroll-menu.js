@@ -11,7 +11,7 @@
 					.addClass("ba-header_secondary")
 					.addClass("ba-header_shown");
 
-				$(document.body).removeClass("ba-menu-open");
+				$(".ba-nav").prependTo($(document.body));
 			}
 		} else {
 			if ($header.hasClass(hClass)) {
@@ -19,6 +19,7 @@
 					.removeClass("ba-header_shown")
 				setTimeout(function() {
 					$header.removeClass(hClass);
+					$(".ba-nav").appendTo($header.child(".ba-container"));
 				}, 300);
 			}
 		}
