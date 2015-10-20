@@ -9,17 +9,27 @@
 			if (!$header.hasClass(hClass)) {
 				$header
 					.addClass("ba-header_secondary")
-					.addClass("ba-header_shown");
+					.addClass("ba-header_shown")
+					.find(".ba-logo__img")
+						.attr("src", "img/logo-middle.svg");
 
-				$(".ba-nav").prependTo($(document.body));
+				if ($(".ba-menu-toggle").css("display") !== "none") {
+					$(".ba-nav").prependTo($(document.body));
+				}
 			}
 		} else {
 			if ($header.hasClass(hClass)) {
 				$header
 					.removeClass("ba-header_shown")
 				setTimeout(function() {
-					$header.removeClass(hClass);
-					$(".ba-nav").appendTo($header.child(".ba-container"));
+					$header
+						.removeClass(hClass)
+						.find(".ba-logo__img")
+							.attr("src", "img/logo.svg");
+
+					if ($(".ba-menu-toggle").css("display") !== "none") {
+						$header.find(".ba-logo").after($(".ba-nav"));
+					}
 				}, 300);
 			}
 		}
