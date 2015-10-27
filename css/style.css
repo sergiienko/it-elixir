@@ -392,14 +392,16 @@ a {
 	color: #FFF;
 	text-transform: uppercase;
 	font-weight: 300;
-	/*letter-spacing: 8.4px;*/
 	letter-spacing: 0.2em;
+	text-shadow: 0 0 6px;
+	opacity: .8;
 }
 
 .ba-banner__subtitle {
 	color: #ECB944;
 	text-transform: lowercase;
 	font-weight: 300;
+	text-shadow: 0 0 3px;
 	opacity: 0.59;
 }
 
@@ -649,6 +651,7 @@ a {
 
 .slick-prev,
 .slick-next {
+	display: none;
 	position: absolute;
 	top: 0;
 	bottom: 0;
