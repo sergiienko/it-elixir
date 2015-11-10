@@ -69,6 +69,26 @@
 
     google.maps.event.addDomListener(window, "load", initialize);
 
+    // Popup
+
+    $('.ba-popup').each(function() {
+      $(this).append('<a class="ba-popup__close js-hide-popup" href="#">Close</a>');
+    });
+
+    $('.js-show-popup').on('click', function(e) {
+      e.preventDefault();
+      $('.ba-popup-overlay, .ba-popup').show();
+    });
+
+    $('.js-hide-popup').on('click', function(e) {
+      e.preventDefault();
+      $('.ba-popup-overlay, .ba-popup').hide();
+    });
+
+    $(document).scroll(function() {
+      $('.ba-popup-overlay, .ba-popup').hide();
+    });
+
   });
 
 })(jQuery);

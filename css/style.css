@@ -136,6 +136,10 @@ a {
 	text-decoration: none;
 }
 
+.ba-hidden {
+	display: none;
+}
+
 .ba-container {
 	max-width: 1024px;
 	margin-left: auto;
@@ -499,7 +503,7 @@ a {
 /* Advantages */
 
 .ba-advantages {
-	position: relative;
+	/*position: relative;*/
 	padding: 150px 0 20px;
 }
 
@@ -513,6 +517,78 @@ a {
 
 .ba-advantages__item > p {
 	padding: 10px 20px;
+}
+
+.ba-advantages-item__link {
+	display: block;
+	color: #5E5E5E;
+	padding: 10px 20px;
+}
+
+.ba-advantages-item__link:hover {
+	color: #010101;
+	text-decoration: underline;
+}
+
+.ba-advantages-item__svg {
+	width: 45px;
+	fill: #393939;
+	cursor: pointer;
+}
+
+.ba-advantages-item__svg:hover {
+	fill: #010101;
+	transition: fill .3s ease-in;
+}
+
+/* Popup */
+
+.ba-popup,
+.ba-popup-overlay {
+	display: none;
+	position: fixed;
+	top: 0; bottom: 0; left: 0; right: 0;
+	z-index: 999;
+}
+
+.ba-popup-overlay {
+	background-color: #000;
+	opacity: .5;	
+}
+
+.ba-popup {
+	width: 70%;
+	max-width: 800px;
+	height: 70%;
+	margin: auto;
+	overflow: auto;
+	background-color: #fff;
+	padding: 50px;
+}
+
+@media (max-width: 600px) {
+
+	.ba-popup {
+		width: 100%;
+		height: 100%;
+	}
+
+}
+
+.ba-popup__svg {
+	fill: #393939;
+	width: 30%;
+}
+
+.ba-popup__close {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 20px 20px 0;
+}
+
+.ba-popup__close:hover {
+	text-decoration: underline;
 }
 
 /* Mission */
