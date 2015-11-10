@@ -77,7 +77,8 @@
 
     $('.js-show-popup').on('click', function(e) {
       e.preventDefault();
-      $('.ba-popup-overlay, .ba-popup').fadeIn();
+      $('.ba-popup-overlay').fadeIn();
+      $(this).siblings('.ba-popup').fadeIn();
     });
 
     $('.js-hide-popup').on('click', function(e) {
