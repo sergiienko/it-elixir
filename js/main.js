@@ -77,16 +77,12 @@
 
     $('.js-show-popup').on('click', function(e) {
       e.preventDefault();
-      $('.ba-popup-overlay, .ba-popup').show();
+      $('.ba-popup-overlay, .ba-popup').fadeIn();
     });
 
     $('.js-hide-popup').on('click', function(e) {
       e.preventDefault();
-      $('.ba-popup-overlay, .ba-popup').hide();
-    });
-
-    $(document).scroll(function() {
-      $('.ba-popup-overlay, .ba-popup').hide();
+      $('.ba-popup-overlay, .ba-popup').fadeOut();
     });
 
   });
