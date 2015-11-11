@@ -89,6 +89,21 @@
       $('.ba-popup-overlay, .ba-popup').fadeOut(400);
     });
 
+    // Mail form
+
+   $(".ba-help__form").submit( function () {    
+      $.ajax({   
+        type: "POST",
+        data : $(this).serialize(),
+        cache: false,  
+        url: "send.php",   
+        success: function(data){
+            alert("Thank you. We'll contact you soon");
+        }   
+      });   
+      return false;   
+    }); 
+
   });
 
 })(jQuery);
