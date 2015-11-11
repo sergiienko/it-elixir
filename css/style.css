@@ -511,27 +511,35 @@ a {
 	margin-bottom: 70px;
 }
 
-.ba-advantages__item {
+.ba-advantages__item,
+.ba-services__item {
 	min-height: 165px;
 }
 
-.ba-advantages-item__text {
+.ba-advantages-item__text,
+.ba-services-item__text {
 	color: #5E5E5E;
 	padding: 10px 20px;
 }
 
-.ba-advantages-item__wrapper {
+.ba-advantages-item__wrapper,
+.ba-services-item__wrapper {
 	display: block;
 	min-height: 195px;
 	padding: 20px 0;
 }
 
-.ba-advantages-item__wrapper:hover {
-	/*background-color: #F2F2F2;*/
+.ba-services-item__wrapper {
+	min-height: 201px;
+}
+
+.ba-advantages-item__wrapper:hover,
+.ba-services-item__wrapper:hover {
 	background-color: rgba(0, 0 , 0, .05);
 }
 
-.ba-advantages-item__wrapper:hover .ba-advantages-item__text {
+.ba-advantages-item__wrapper:hover .ba-advantages-item__text,
+.ba-services-item__wrapper:hover .ba-services-item__text {
 	color: #010101;
 	text-decoration: underline;
 }
@@ -584,6 +592,16 @@ a {
 
 .ba-popup__close:hover {
 	text-decoration: underline;
+}
+
+.ba-popup ul {
+	display: inline-block;
+	color: #5E5E5E;
+	margin: 0 auto;
+}
+
+.ba-popup li {
+	text-align: left;
 }
 
 /* Mission */

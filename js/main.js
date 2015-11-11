@@ -77,13 +77,13 @@
 
     $('.js-show-popup').on('click', function(e) {
       e.preventDefault();
-      $('.ba-popup-overlay').fadeIn();
-      $(this).siblings('.ba-popup').fadeIn();
+      $('.ba-popup-overlay').fadeIn(400);
+      $(this).siblings('.ba-popup').fadeIn(400);
     });
 
     $('.js-hide-popup').on('click', function(e) {
       e.preventDefault();
-      $('.ba-popup-overlay, .ba-popup').fadeOut();
+      $('.ba-popup-overlay, .ba-popup').fadeOut(400);
     });
 
   });
