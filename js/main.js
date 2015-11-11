@@ -53,7 +53,9 @@
           var mapProp = {
                 center: new google.maps.LatLng(50.420852, 30.520927),
                 zoom: 17,
-                disableDefaultUI: true,
+                // disableDefaultUI: true,
+                mapTypeControl: false,
+                streetViewControl: false,
                 mapTypeId: google.maps.MapTypeId.ROADMAP,
                 scrollwheel: false
               },
