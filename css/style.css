@@ -397,7 +397,7 @@ a {
 	text-transform: uppercase;
 	font-weight: 300;
 	letter-spacing: 0.2em;
-	text-shadow: 0 0 6px;
+	/*text-shadow: 0 0 6px;*/
 	opacity: .8;
 }
 
